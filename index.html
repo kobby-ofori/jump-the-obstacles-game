@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <div class="container">
+    <h1>JUMP THE OBSTACLES</h1>
+    <div style="position: absolute; display: flex; align-items: center;">
+      <div style="color: aliceblue; padding: 10px;">
+        <details>
+          <p>Click the button below to start the Game.</p>
+          <p>Refresh page to restart game after Game Over.</p>
+        </details>
+        <button id="click-me" onclick="startCountUp()">Start Game</b>
+      </div>
+      <div class="health-bar">
+        <div class="health" id="health"></div>
+      </div>
+      <div id="timer" class="timer">
+        <p id="score">0</p>
+      </div>
+      <div class="screen-control">
+        <button id="up">&UpArrow;/ W</button><br />
+        <button id="left">←/ A</button>
+        <button id="down">↓</button>
+        <button id="right">→/ D</button>
+      </div>
+    </div> 
+    <canvas class="canvas" id="canvas"></canvas>
+  </div>
+
+<script src="js/classes.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
